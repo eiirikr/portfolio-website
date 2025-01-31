@@ -108,3 +108,29 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+/* ----- CONTACT BOX ----- */
+document.getElementById('send-button').addEventListener('click', function() {
+  // Get input values
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  // Check if all fields are filled
+  if (name && email && message) {
+    // Create email content
+    var emailBody = `
+      Name: ${name}
+      Email: ${email}
+      Message: ${message}
+    `;
+
+    // Create mailto link with the email template
+    var mailtoLink = `mailto:javierjericm@gmail.com?subject=Contact from ${name}&body=${encodeURIComponent(emailBody)}`;
+
+    // Open the user's default email client with the pre-filled template
+    window.location.href = mailtoLink;
+  } else {
+    alert('Please fill in all fields.');
+  }
+});
