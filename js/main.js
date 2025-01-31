@@ -112,21 +112,33 @@ window.addEventListener("scroll", scrollActive);
 /* ----- CONTACT BOX ----- */
 document.getElementById('send-button').addEventListener('click', function() {
   // Get input values
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
 
   // Check if all fields are filled
   if (name && email && message) {
     // Create email content
-    var emailBody = `
+    const emailBody = `
+      Hello Jeric,
+
+      I hope you're doing well.
+
+      You have received a new message from the contact form on your portfolio website. Below are the details:
+
       Name: ${name}
       Email: ${email}
-      Message: ${message}
+
+      Message:
+      ${message}
+
+      Best regards,
+      ${name}
     `;
 
+
     // Create mailto link with the email template
-    var mailtoLink = `mailto:javierjericm@gmail.com?subject=Contact from ${name}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:javierjericm@gmail.com?subject=Contact from ${name}&body=${encodeURIComponent(emailBody)}`;
 
     // Open the user's default email client with the pre-filled template
     window.location.href = mailtoLink;
