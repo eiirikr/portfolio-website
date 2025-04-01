@@ -38,18 +38,3 @@ I am a passionate web developer with a strong foundation in both front-end and b
 - **Smooth Animations**: Scroll animations and interactive elements are added to make the website engaging and dynamic.
 - **Interactive Typing Effect**: A creative typing effect adds a personal touch on the homepage, reflecting my enthusiasm for web development.
 
-## 📂 Project Structure
-
-- `index.html`: Main structure of the portfolio website
-- `css/style.css`: Styling for the layout and elements
-- `js/main.js`: Contains custom JavaScript functionality, including animations and interactions
-- `images/`: All images used in the portfolio, including profile image and favicon
-
-## 💡 How to View This Website Locally
-
-To run the portfolio locally on your machine, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
-
