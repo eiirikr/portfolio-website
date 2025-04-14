@@ -4,8 +4,7 @@ Welcome to my personal portfolio website! This is where I showcase my skills, pr
 
 ## 🌐 Live Preview
 
-🔗 [Visit My Portfolio](#)  
-*(Replace with your actual live site URL)*
+🔗 [Visit My Portfolio](https://eiirikr.github.io/portfolio-website/) 
 
 ---
 
